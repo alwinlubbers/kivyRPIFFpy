@@ -72,5 +72,5 @@ hash -r;
 
 sudo pip3 install --upgrade cython nose;
 export PKG_CONFIG_PATH=$HOME/ffmpeg_build/lib/pkgconfig:$PKG_CONFIG_PATH
-sudo -E pip install https://github.com/matham/ffpyplayer/archive/master.zip
+sudo -E pip3 install https://github.com/matham/ffpyplayer/archive/master.zip
 echo "Add 'export LD_LIBRARY_PATH=~/ffmpeg_build/lib/:\$LD_LIBRARY_PATH' to your env"
