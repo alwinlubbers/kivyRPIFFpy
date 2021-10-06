@@ -28,15 +28,6 @@ make -j4;
 make install;
 make distclean;
 
-sudo apt-get -y install libx264-dev;
-cd ~/ffmpeg_sources;
-wget http://download.videolan.org/pub/x264/snapshots/last_x264.tar.bz2;
-tar xjf last_x264.tar.bz2;
-cd x264-snapshot*;
-PATH="$HOME/ffmpeg_build/bin:$PATH" ./configure --prefix="$HOME/ffmpeg_build" --bindir="$HOME/ffmpeg_build/bin" --enable-shared --extra-cflags="-fPIC";
-PATH="$HOME/ffmpeg_build/bin:$PATH" make -j4;
-make install;
-make distclean;
 
 sudo apt-get -y install libmp3lame-dev;
 sudo apt-get -y install nasm;
